@@ -1,0 +1,19 @@
+<div class="card-imageWrapper">
+{{#if siteurl}}
+  <a href="{{{siteurl}}}" target="_blank">
+{{else}}
+  <a href="{{{url}}}">
+{{/if}}
+    <div class="card-image" style="background-image: url({{image}});"></div>
+  </a>
+</div>
+
+<div class="card-content">
+  <div class="card-content-inner">
+    <h1 class="card-title">{{{title}}}</h1>
+    <div class="card-descriptionWrapper">
+      <p>{{{excerpt}}}</p>
+    </div>
+  </div>
+</div>
+<a href="{{{url}}}" class="link-read-more">See more</a>

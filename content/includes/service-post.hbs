@@ -1,0 +1,24 @@
+<section class="bgcolor section" id="{{id}}">
+  <div class="row row-with-padding service-post">
+    <header class="col col-12 section-header">
+      <h2 class="section-subtitle section-subtitle-centered">{{subtitle}}</h2>
+      <h1 class="section-title section-title-centered">{{title}}</h1>
+    </header>
+    <div class="col col-12 col-sm-6">
+      <h2 class="service-post-title">You provide:</h2>
+      <ul class="service-post-list">
+        {{#each provide}}
+          <li>{{>service-post-listItem this}}</li>
+        {{/each}}
+      </ul>
+    </div>
+    <div class="col col-12 col-sm-6">
+      <h2 class="service-post-title">We deliver:</h2>
+      <ul class="service-post-list">
+        {{#each deliver}}
+          <li>{{>service-post-listItem this}}</li>
+        {{/each}}
+      </ul>
+    </div>
+  </div>
+</section>

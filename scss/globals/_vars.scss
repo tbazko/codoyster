@@ -1,0 +1,33 @@
+$layoutSidePadding: 40px;
+$layoutWidth: 1280px;
+$font-cursive: "Satisfy", cursive;
+$font-header: "Libre Baskerville", sans-serif;
+$font-main: "Libre Baskerville", sans-serif;
+
+
+// Z for z-index
+$z-stack: base,
+  content,
+  content-overlay,
+  content-navigation,
+  navigation-grey-overlay,
+  navigation,
+  dialog-grey-overlay,
+  dialog;
+
+// Colors
+$color-canary: #ffa;
+$color-laser-lemon: #ffff5d;
+$color-white: #fff;
+$color-white-smoke: #f5f5f5;
+$color-solitude: #f2f5f6;
+$color-grey-chateau: #979a9e;
+$color-dim-grey: #666;
+$color-grey: #808080;
+$color-night-rider: #333;
+$color-black-pearl: #151a1f;
+
+// Theme colors
+$color-main: #adad73;
+$color-alternate: #2a2a2a;
+$row-bgcolor: $color-solitude;

@@ -1,0 +1,13 @@
+h1.card-title,
+.card-title {
+  color: $color-night-rider;
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.4;
+  padding: 7px 0 10px;
+
+  @include breakpoint(xsmall) {
+    font-size: 20px;
+    width: 100%;
+  }
+}

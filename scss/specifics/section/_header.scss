@@ -1,0 +1,11 @@
+.section-header {
+  margin-bottom: 40px;
+
+  @include breakpoint(xsmall) {
+    margin-bottom: 120px;
+
+    .parallax & {
+      margin-bottom: 40px;
+    }
+  };
+}

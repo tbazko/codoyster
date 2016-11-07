@@ -1,0 +1,37 @@
+---
+title: Web development by Codoyster
+navTitle: Home
+primary: 1
+url: /
+---
+<section class="parallax">
+  <div class="image"></div>
+  <div class="parallax-description">
+    <div class="section-header">
+      <h1 class="section-subtitle section-subtitle-canary section-subtitle">Great websites are created here</h1>
+      <p class="section-title section-title-noline">You are interested in:</p>
+    </div>
+    <h2><a href="{{index.service.0.post.0.url}}" class="button button-action button-action-laser-lemon">Static site</h2></a>
+    <h2><a href="{{index.service.0.post.1.url}}" class="button button-action button-action-canary">Dynamic site</a></h2>
+    <h2><a href="{{index.service.0.post.2.url}}" class="button button-action">WordPress site</a></h2>
+  </div>
+</section>
+{{#each index.service}}
+  <section class="bgcolor section">
+    <div class="row row-with-padding">
+      <header class="col col-12 section-header">
+        {{#if this.subtitle}}<h3 class="section-subtitle section-subtitle-centered">{{this.subtitle}}</h3>{{/if}}
+        <h2 class="section-title section-title-centered">{{this.title}}</h2>
+      </header>
+
+      {{#each this.post}}
+        <div class="col col-12 col-sm-4 text-center">
+          <div class="card {{../modifier}}">
+            {{> post-excerpt this}}
+          </div>
+        </div>
+      {{/each}}
+
+    </div>
+  </section>
+{{/each}}

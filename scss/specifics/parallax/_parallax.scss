@@ -1,0 +1,55 @@
+@keyframes parallax {
+  0% {
+    transform: translate(-10%, -10%);
+  }
+
+  25% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-10%, -10%);
+  }
+
+  75% {
+    transform: translate(-20%, -20%);
+  }
+
+  100% {
+    transform: translate(-10%, -10%);
+  }
+}
+
+.parallax {
+  width: 100%;
+  height: calc(100vh - 126px);
+  overflow: hidden;
+  position: relative;
+  min-height: 455px;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba($color-alternate, .5);
+    z-index: index($z-stack, content);
+  }
+
+  .image {
+    width: 125%;
+    height: 125%;
+    background-image: url("../images/web-development.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    transform: translate(-10%, -10%);
+    animation-name: parallax;
+    animation-duration: 80s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+}

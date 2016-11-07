@@ -1,0 +1,9 @@
+.card-descriptionWrapper {
+  color: $color-night-rider;
+  position: relative;
+  overflow: hidden;
+
+  @include breakpoint(xsmall) {
+    margin-bottom: 0;
+  }
+}

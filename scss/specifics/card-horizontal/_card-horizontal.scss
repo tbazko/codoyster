@@ -1,0 +1,76 @@
+.card-horizontal {
+  border: 1px solid $color-white-smoke;
+  max-width: 100%;
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 30px;
+  position: relative;
+  max-width: 370px;
+
+  @include breakpoint(xsmall) {
+    max-width: 100%;
+    min-height: 190px;
+  }
+
+  .button-order {
+    left: auto;
+    right: 0;
+  }
+}
+
+.card-horizontal-image {
+  position: relative;
+  width: 100%;
+  text-align: center;
+
+  @include breakpoint(xsmall) {
+    height: auto;
+    width: calc(30% - 20px);
+    padding: 0;
+    text-align: left;
+    margin-left: 20px;
+    max-height: 148px;
+  }
+
+  @include breakpoint(small) {
+    width: calc(25% - 20px);
+  }
+
+  @include breakpoint(medium) {
+    width: calc(18% - 20px);
+  }
+
+  img {
+    display: inline-block;
+    height: auto;
+    width: auto;
+    max-width: 100%;
+    max-height: 100%;
+
+    @include breakpoint(xsmall) {
+      position: absolute;
+      top: 0;
+      left: calc(50% - 20px);
+      transform: translate(-50%, 0);
+    }
+  }
+}
+
+.card-horizontal-content {
+  padding: 20px 0 40px;
+
+  @include breakpoint(xsmall) {
+    width: 70%;
+    padding: 0 0 40px;
+  }
+
+  @include breakpoint(small) {
+    width: 75%;
+    padding: 0 0 40px;
+  }
+
+  @include breakpoint(medium) {
+    padding: 0 0 20px 0;
+    width: 82%;
+  }
+}

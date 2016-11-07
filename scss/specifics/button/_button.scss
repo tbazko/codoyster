@@ -1,0 +1,66 @@
+a.button,
+a.button:visited,
+a.button:hover,
+a.button:active {
+  text-decoration: none;
+  font-weight: 400;
+  border: 0;
+}
+
+.button {
+  border-radius: 4px;
+  display: inline-block;
+}
+
+a.button-action,
+.button-action {
+  font-size: 16px;
+  font-weight: 400;
+  background: $color-main;
+  padding: 10px 15px;
+  margin-bottom: 30px;
+  transition: background .2s ease;
+
+  &:hover,
+  &:active {
+    background: darken($color-main, 10%);
+    transition: background .2s ease;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+
+  &:first-of-type {
+    margin-bottom: 30px;
+  }
+
+  &-canary {
+    background: $color-canary;
+    color: $color-grey;
+    transition: background .2s ease;
+
+    &:hover,
+    &:active {
+      background: lighten($color-canary, 10%);
+      transition: background .2s ease;
+    }
+  }
+
+  &-laser-lemon {
+    background: $color-laser-lemon;
+    color: $color-grey;
+    transition: background .2s ease;
+
+    &:hover,
+    &:active {
+      background: lighten($color-laser-lemon, 10%);
+      transition: background .2s ease;
+    }
+  }
+
+  .parallax & {
+    width: 160px;
+    padding: 10px 5px;
+  }
+}

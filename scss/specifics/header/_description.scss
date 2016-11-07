@@ -1,0 +1,13 @@
+.header-description {
+  display: none;
+  margin: 0;
+  float: right;
+  padding: 4px 0;
+  max-width: 90px;
+  text-align: right;
+
+  @include breakpoint(small) {
+    max-width: none;
+    display: block;
+  }
+}

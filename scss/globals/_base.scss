@@ -1,0 +1,128 @@
+@import "icon-font";
+@import "vars";
+@import "mixins";
+@import "reset";
+@import "flexboxgrid";
+@import "grid";
+
+* {
+  min-width: 0;
+  min-height: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+body {
+  font-family: $font-main;
+  font-weight: 300;
+  font-size: 14px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: $font-header;
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 28px;
+
+  @include breakpoint(xsmall) {
+    font-size: 35px;
+  };
+
+  &.page-header {
+    padding: 30px 0;
+    border-top: 1px solid $color-solitude;
+    border-bottom: 1px solid $color-solitude;
+    margin-bottom: 50px;
+  }
+}
+
+h2 {
+  font-size: 24px;
+
+  @include breakpoint(xsmall) {
+    font-size: 24px;
+  };
+}
+
+h3 {
+  font-size: 20px;
+}
+
+h4 {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+strong {
+  font-weight: 400;
+  color: $color-night-rider;
+}
+
+blockquote {
+  font-size: 24px;
+  line-height: 36px;
+  font-weight: 400;
+  font-style: italic;
+  margin: 0 0 35px 0;
+  padding: 30px 40px;
+  position: relative;
+  color: #333;
+  border: 1px dotted $color-main;
+}
+
+.is-hidden {
+  display: none;
+}
+
+a {
+  color: inherit;
+  border-bottom: 1px dotted transparent;
+  cursor: pointer;
+  text-decoration: none;
+  transition: border .2s ease, color .2s ease;
+
+  &:hover,
+  &:active {
+    border-bottom: 1px dotted $color-main;
+    transition: border .2s ease, color .2s ease;
+  }
+
+  &:visited {
+    color: currentColor;
+  }
+
+  &.link-read-more {
+    font-family: $font-cursive;
+    font-weight: normal;
+    font-size: 21px;
+    color: $color-main;
+    border-bottom: 1px dotted transparent;
+    transition: border .2s ease, color .2s ease;
+
+    &:hover,
+    &:active {
+      border-bottom: 1px dotted $color-main;
+      transition: border .2s ease, color .2s ease;
+    }
+  }
+}
+
+.bgcolor {
+  &:nth-of-type(odd) {
+    background: $row-bgcolor;
+  }
+}
+
+.text-center {
+  text-align: center;
+}

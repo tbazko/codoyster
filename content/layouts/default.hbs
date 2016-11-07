@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    {{> head }}
+  </head>
+  <body>
+    <div class="main-container js-main-container">
+      {{> nav }}
+      <main>
+        {{> body }}
+      </main>
+      {{> footer }}
+    </div>
+    <div class="dialog js-dialog">
+      <div class="dialog-close js-dialog-close"></div>
+    </div>
+    <script src="/js/vendor/jquery-3.1.1.min.js"></script>
+    <script src="/js/base.min.js"></script>
+    {{#if script}}
+      <script src="/js/{{script}}.js"></script>
+    {{/if}}
+  </body>
+</html>

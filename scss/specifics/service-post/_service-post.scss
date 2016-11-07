@@ -1,0 +1,30 @@
+.service-post {
+  position: relative;
+  padding: 0 20px;
+
+  &:first-of-type {
+    padding-left: 0;
+  }
+
+  &:last-of-type {
+    padding-right: 0;
+  }
+}
+
+.service-post-list {
+  list-style-type: none;
+
+  li {
+    @extend %clearfix;
+    margin-bottom: 45px;
+  }
+
+  h3 {
+    font-size: 18px;
+    line-height: 35px;
+
+    @include breakpoint(xsmall) {
+      font-size: 18px;
+    };
+  }
+}

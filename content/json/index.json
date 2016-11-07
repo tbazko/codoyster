@@ -1,0 +1,194 @@
+{
+  "service": [
+    {
+      "title": "We are building",
+      "subtitle": "Welcome to Codoyster",
+      "modifier": "usp-block--modern",
+      "post": [
+        {
+          "title": "Static website",
+          "excerpt": "Codoyster creates new websites from scratch. \"Static\" means: fixed content, but not \"fixed\" design. You can have all animations you wish on your website.",
+          "subtitle": "html5, css3, assemble.io, javascript, jquery",
+          "image": "https://placeholdit.imgix.net/~text?txtsize=33&txt=740%C3%97500&w=740&h=500",
+          "url": "/service#static-website",
+          "id": "static-website",
+          "provide": [
+            {
+              "title": "Design",
+              "text": "Design for mobile, tablet and desktop sizes (or specific breakpoints)",
+              "iconName": "file-picture"
+            },
+            {
+              "title": "Content",
+              "text": "Correct content to fill the site",
+              "iconName": "file-text"
+            },
+            {
+              "title": "Features descriptions",
+              "text": "User flow and animations flow description",
+              "iconName": "cogs"
+            },
+            {
+              "title": "Additional info",
+              "text": "Additional info like: hosting needed, seo optimisation required",
+              "iconName": "list2"
+            }
+          ],
+          "deliver": [
+            {
+              "title": "Source code",
+              "text": "Website source code according to design and specs",
+              "iconName": "embed2"
+            },
+            {
+              "title": "Launch of website",
+              "text": "If required: launch website on hosting (put it online)",
+              "iconName": "rocket"
+            },
+            {
+              "title": "Seo optimised pages",
+              "text": "Seo optimised website pages",
+              "iconName": "search"
+            },
+            {
+              "title": "Crossbrowser support",
+              "text": "FF, Chrome, Safari, IE10+, Android and iOS support. IE9 or lower support for additional fee",
+              "iconName": "stack"
+            }
+          ]
+        },
+        {
+          "title": "Dynamic website or webapp",
+          "excerpt": "Based on Node.js and MySQL. Nice option for large websites or web services.",
+          "subtitle": "html5, css3, node.js, es6 and mySQL",
+          "image": "https://placeholdit.imgix.net/~text?txtsize=33&txt=740%C3%97500&w=740&h=500",
+          "url": "/service#dynamic-website",
+          "id": "dynamic-website",
+          "provide": [
+            {
+              "title": "Design of application",
+              "text": "Design for mobile, tablet and desktop sizes (or specific breakpoints).",
+              "iconName": "file-picture"
+            },
+            {
+              "title": "Description and content",
+              "text": "Application description and content.",
+              "iconName": "list-numbered"
+            },
+            {
+              "title": "Application flow",
+              "text": "How should application work in different cases? The best option to provide explanation in UML or UML like schema.",
+              "iconName": "tree"
+            },
+            {
+              "title": "Buisness requirements",
+              "text": "Specification with requirements.",
+              "iconName": "coin-dollar"
+            },
+            {
+              "title": "Technical requirements",
+              "text": "Preferences of technologies stack (if any).",
+              "iconName": "wrench"
+            }
+          ],
+          "deliver": [
+            {
+              "title": "Source code",
+              "text": "Dynamic website or application source code based on <strong>Node.js</strong>, <strong>Express.js</strong> and <strong>MySQL</strong>",
+              "iconName": "embed2"
+            },
+            {
+              "title": "Launch of application",
+              "text": "If required we launch your site on hosting provided by you (has to support Node.js) or on one of the free ones e.g. heroku.",
+              "iconName": "rocket"
+            },
+            {
+              "title": "Seo optimised pages",
+              "text": "Seo optimised website pages",
+              "iconName": "search"
+            },
+            {
+              "title": "Crossbrowser support",
+              "text": "FF, Chrome, Safari, IE10+, Android and iOS support. IE9 or lower support for additional fee",
+              "iconName": "stack"
+            }
+          ]
+        },
+        {
+          "title": "WordPress website",
+          "excerpt": "Building from scratch or with required theme. Perfect for bloggers or those, who wants to update their site content regularly, whithout editing source code.",
+          "subtitle": "wordpress, theme, php, css3, javascript, jquery, html5",
+          "image": "https://placeholdit.imgix.net/~text?txtsize=33&txt=740%C3%97500&w=740&h=500",
+          "url": "/service#wordpress-website",
+          "id": "wordpress-website",
+          "provide": [
+            {
+              "title": "Website design",
+              "text": "Design for mobile, tablet and desktop sizes (or specific breakpoints) OR desired theme.",
+              "iconName": "file-picture"
+            },
+            {
+              "title": "Content for website",
+              "text": "Content, to fill the site. Content can be not final or even fake, as you can manage the site through Wordpress yourself later.",
+              "iconName": "file-picture"
+            },
+            {
+              "title": "Features descriptions",
+              "text": "User and content-manager workflow, animation steps.",
+              "iconName": "cogs"
+            },
+            {
+              "title": "Additional info",
+              "text": "There is always something more to say and define. Feel free.",
+              "iconName": "list2"
+            }
+          ],
+          "deliver": [
+            {
+              "title": "Source code",
+              "text": "Website source code according to design and specs",
+              "iconName": "embed2"
+            },
+            {
+              "title": "Launch of website",
+              "text": "If required: launch website on hosting (put it online)",
+              "iconName": "rocket"
+            },
+            {
+              "title": "Seo optimised pages",
+              "text": "Seo optimised website pages",
+              "iconName": "search"
+            },
+            {
+              "title": "Crossbrowser support",
+              "text": "FF, Chrome, Safari, IE10+, Android and iOS support. IE9 or lower support for additional fee",
+              "iconName": "stack"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "We are providing",
+      "subtitle": "Do you need some Front-end help?",
+      "modifier": "usp-block--classic",
+      "post": [
+        {
+          "title": "Fix for a problem",
+          "subtitle": "On your site related to front-end code",
+          "image": "https://placeholdit.imgix.net/~text?txtsize=33&txt=740%C3%97500&w=740&h=500"
+        },
+        {
+          "title": "Site speed optimisation",
+          "subtitle": "Decrease your site load and interaction speed &mdash; increase conversion",
+          "image": "https://placeholdit.imgix.net/~text?txtsize=33&txt=740%C3%97500&w=740&h=500"
+        },
+        {
+          "title": "General Front-end advice",
+          "subtitle": "Confused with all the front end tools? Don't know where to put script or better organize your files? Codoyster can help.",
+          "image": "https://placeholdit.imgix.net/~text?txtsize=33&txt=740%C3%97500&w=740&h=500"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+.card-content-inner {
+  padding: 15px 0;
+  border-top: 0;
+  font-size: 14px;
+  line-height: 26px;
+
+  @include breakpoint(xsmall) {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}

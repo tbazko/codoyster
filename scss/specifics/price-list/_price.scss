@@ -1,0 +1,66 @@
+.price {
+  @include breakpoint(small) {
+    width: calc(100% - 30px);
+    margin-left: 30px;
+  };
+
+  .list {
+    background: $color-solitude;
+    list-style-type: none;
+    margin: 0;
+  }
+
+  .title {
+    background: $color-main;
+    color: $color-white;
+    font-weight: 400;
+    line-height: 26px;
+    padding: 15px 20px;
+    text-align: center;
+
+    @include breakpoint(medium) {
+      padding: 20px 30px;
+    };
+  }
+
+  li {
+    border-bottom: 1px solid #e2ebee;
+    padding: 15px 20px;
+    display: block;
+    width: 50%;
+
+    &:last-child {
+      width: 100%;
+      float: none;
+    }
+
+    @include breakpoint(small) {
+      &:last-child {
+        border-bottom: 0;
+        padding: 25px 20px;
+      }
+    }
+
+    @include breakpoint(medium) {
+      padding: 20px 30px;
+
+      &:last-child {
+        border-bottom: 0;
+        padding: 40px 30px;
+      }
+    };
+
+    &:nth-child(odd) {
+      font-weight: 400;
+      float: left;
+    }
+    &:nth-child(even) {
+      float: right;
+      text-align: right;
+
+      &:after {
+        @extend %clearfix;
+      }
+    }
+  }
+}

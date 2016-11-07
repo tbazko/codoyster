@@ -1,0 +1,28 @@
+.card-image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: transparent no-repeat top center;
+  background-size: cover;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+    opacity: 0;
+    transition: opacity .5s;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .has-mouse a.card-mask:hover & {
+    &:after {
+      opacity: .2;
+    }
+  }
+}

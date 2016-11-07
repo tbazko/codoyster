@@ -1,0 +1,57 @@
+{
+  "project": {
+    "freelance": [
+      {
+        "title": "Auditorium",
+        "image": "/images/portfolio/auditorium.png",
+        "excerpt": "Space for tutors and coaches in Kiev.",
+        "url": "/portfolio/auditorium",
+        "siteurl": "http://auditorium.com.ua"
+      },
+      {
+        "title": "Developer's portfolio",
+        "image": "/images/portfolio/tbazko.png",
+        "excerpt": "Front-end developer's CV and portfolio.",
+        "url": "/portfolio/portfolio",
+        "siteurl": "http://tbazko.github.io/"
+      }
+    ],
+    "participated": [
+      {
+        "title": "G-Star Raw",
+        "image": "/images/portfolio/g-star.png",
+        "excerpt": "Official online store.",
+        "url": "/portfolio/g-star",
+        "siteurl": "https://www.g-star.com/nl_nl"
+      },
+      {
+        "title": "G-Star Raw Outlet",
+        "image": "/images/portfolio/g-star-outlet.png",
+        "excerpt": "Official outlet online store.",
+        "url": "/portfolio/g-star-outlet",
+        "siteurl": "https://outlet.g-star.com/nl_nl/"
+      },
+      {
+        "title": "Y8",
+        "image": "/images/portfolio/y8.png",
+        "excerpt": "Games at Y8.com. Over 50,000 games to choose from online.",
+        "url": "/portfolio/y8",
+        "siteurl": "http://www.y8.com/"
+      },
+      {
+        "title": "ID.net",
+        "image": "/images/portfolio/idnet.png",
+        "excerpt": "A single login for hundreds of sites, games, and applications.",
+        "url": "/portfolio/idnet",
+        "siteurl": "https://www.id.net/"
+      },
+      {
+        "title": "Ant Bookmarks",
+        "image": "/images/portfolio/ant.png",
+        "excerpt": "Find results from usual web and your bookmark collection at the same time.",
+        "url": "/portfolio/ant",
+        "siteurl": "https://www.ant.com/"
+      }
+    ]
+  }
+}

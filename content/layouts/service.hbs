@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    {{> head }}
+  </head>
+  <body>
+    <div class="main-container js-main-container">
+      {{> nav }}
+      <main>
+        {{#withSort service 'data.posted'}}
+          {{#each this.pages }}
+          <section class="bgcolor section" id="{{this.data.id}}">
+            <div class="row row-with-padding">
+              <header class="col col-12 section-header">
+                <h1 class="section-title section-title-centered">{{this.data.title}}</h1>
+              </header>
+              <div class="col col-12 col-sm-6">
+                <h3>You provide:</h3>
+                <ul>
+                  {{#each this.data.provide}}
+                    <li>{{this}}</li>
+                  {{/each}}
+                </ul>
+              </div>
+              <div class="col col-12 col-sm-6">
+                <h3>I deliver:</h3>
+                <ul>
+                  {{#each this.data.deliver}}
+                    <li>{{this}}</li>
+                  {{/each}}
+                </ul>
+              </div>
+            </div>
+          </section>
+          {{/each}}
+        {{/withSort}}
+        {{> body }}
+      </main>
+      {{> footer }}
+    </div>
+    <div class="dialog js-dialog">
+      <div class="dialog-close js-dialog-close"></div>
+    </div>
+    <script src="/js/vendor/jquery-3.1.1.min.js"></script>
+    <script src="/js/base.min.js"></script>
+    {{#if script}}
+      <script src="/js/{{script}}.js"></script>
+    {{/if}}
+  </body>
+</html>

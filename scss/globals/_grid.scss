@@ -1,0 +1,108 @@
+*,
+*:after,
+*:before {
+  box-sizing: border-box;
+}
+
+[class*="col-"] {
+  float: left;
+}
+
+.row {
+  width: 100%;
+  max-width: $layoutWidth;
+  margin: 0 auto;
+  position: relative;
+  z-index: index($z-stack, base);
+
+  &.row-navigation {
+    background: $color-white;
+    z-index: index($z-stack, navigation);
+  }
+
+  &.row-all-contacts {
+    background: $color-black-pearl;
+    color: $color-white;
+    text-align: center;
+
+    @include breakpoint(small) {
+      margin-top: -20px;
+      padding: 30px 0;
+      width: 80%;
+    }
+
+    @include breakpoint(medium) {
+      margin-top: -45px;
+    }
+
+    @include breakpoint(large) {
+      margin-top: -90px;
+    }
+  }
+
+  .centered {
+    float: none;
+    margin: 0 auto;
+  }
+
+  .row {
+    min-width: 0;
+  }
+
+  &.row-with-padding {
+    padding-left: $layoutSidePadding/2;
+    padding-right: $layoutSidePadding/2;
+
+    @include breakpoint(xsmall) {
+      padding-left: $layoutSidePadding;
+      padding-right: $layoutSidePadding;
+    }
+  }
+
+  &.row-setmax {
+    max-width: $layoutWidth - $layoutSidePadding * 2;
+  }
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.col-justify {
+  text-align: center;
+
+  @include breakpoint(xsmall) {
+    text-align: justify;
+    text-align-last: justify;
+  }
+}
+
+/* Content Columns */
+$columns: 12;
+
+@mixin createFractionColumns ($prefix, $columns) {
+  // Mixin for creating row columns.
+  // Add name of prefix + selector type '.', '&.' etc. (in brackets!)
+  // And number of columns to make it work
+  @for $column from 1 through $columns {
+    #{$prefix}-#{$column} {
+      width: 100% / ($columns / $column);
+    }
+  }
+}
+
+@include createFractionColumns (".col", $columns);
+
+@include breakpoint(small) {
+  @include createFractionColumns (".col-sm", $columns);
+}
+
+@include breakpoint(medium) {
+  @include createFractionColumns (".col-md", $columns);
+}
+
+@include breakpoint(large) {
+  @include createFractionColumns (".col-lg", $columns);
+}

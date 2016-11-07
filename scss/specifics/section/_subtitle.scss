@@ -1,0 +1,16 @@
+.section-subtitle {
+  font-family: $font-cursive;
+  font-size: 26px;
+  line-height: 30px;
+  font-style: italic;
+  font-weight: 300;
+  color: $color-main;
+
+  &-centered {
+    text-align: center;
+  }
+
+  &-canary {
+    color: $color-canary;
+  }
+}

@@ -1,0 +1,45 @@
+.main-container {
+  position: relative;
+  width: 100%;
+
+  &:after {
+    content: '';
+    background: rgba(0,0,0,0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transition: background 0s ease;
+    transform: translateZ(0);
+    z-index: -1;
+  }
+
+  &.is-active-menu,
+  &.is-active-dialog {
+    position: fixed;
+    height: 100vh;
+    overflow: hidden;
+
+    &:after {
+      content: '';
+      background: rgba(0,0,0,.8);
+      transition: background .4s ease;
+      z-index: index($z-stack, navigation-grey-overlay);
+    }
+  }
+
+  &.is-active-dialog {
+    display: none;
+    height: auto;
+
+    @include breakpoint(small) {
+      display: block;
+      height: 100vh;
+    }
+
+    &:after {
+      z-index: index($z-stack, dialog-grey-overlay);
+    }
+  }
+}

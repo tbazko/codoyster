@@ -1,0 +1,58 @@
+.contact-form {
+  margin: 0 auto;
+  max-width: 518px;
+
+  @include breakpoint(medium) {
+    min-width: 400px;
+  }
+
+  p {
+    margin: 0 0 20px 0;
+  }
+
+  input[type="submit"] {
+    border-radius: 0;
+    font-size: 14px;
+    appearance: none;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  textarea {
+    padding: 10px 15px;
+    width: 100%;
+    border: 1px solid $color-grey-chateau;
+    border-radius: 0;
+    box-shadow: none;
+    color: $color-night-rider;
+    font-size: 14px;
+    appearance: none;
+    @include breakpoint(medium) {
+      padding: 20px 30px;
+    }
+
+    .dialog & {
+      padding: 10px 15px;
+    }
+  }
+
+  textarea {
+    vertical-align: top;
+  }
+
+  .ajax-loader {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translate(0, -50%);
+  }
+
+  p {
+    position: relative;
+  }
+
+  .wpcf7-response-output {
+    margin: 20px 0 0;
+  }
+}

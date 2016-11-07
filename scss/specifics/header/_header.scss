@@ -1,0 +1,23 @@
+.header {
+  background-image: url('images/edu-sm.png');
+  background-repeat: repeat-x;
+  background-position: 0 78%;
+  color: #fff;
+  font-size: 13px;
+  margin: 0;
+  padding: 5px 0;
+  position: relative;
+  z-index: index($z-stack, navigation);
+
+  @include breakpoint(small) {
+    padding: 15px 0;
+  }
+
+  .with-padding {
+    padding: 0 10px;
+
+    @include breakpoint(small) {
+      padding: 0 $layoutSidePadding;
+    }
+  }
+}

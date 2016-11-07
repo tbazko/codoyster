@@ -1,0 +1,24 @@
+.card {
+  display: inline-block;
+  position: relative;
+  max-width: 460px;
+  text-align: left;
+  padding-bottom: 30px;
+  width: 100%;
+
+  @include breakpoint(xsmall) {
+    width: calc(100% - 30px);
+  }
+
+  @include breakpoint(medium) {
+    width: calc(100% - 40px);
+  }
+
+  @include breakpoint(large) {
+    width: calc(100% - 50px);
+  }
+
+  .row {
+    flex-flow: row wrap;
+  }
+}

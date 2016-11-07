@@ -1,0 +1,22 @@
+@charset "utf-8";
+.card-imageWrapper {
+  border-bottom: 0;
+  cursor: pointer;
+  position: relative;
+  padding-bottom: 65%;
+  z-index: index($z-stack, content);
+  overflow: hidden;
+
+  .card-portfolio & {
+    padding-bottom: 100%;
+  }
+
+  @include breakpoint(xsmall) {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 57%;
+    left: 0;
+    padding-bottom: 65%;
+  }
+}

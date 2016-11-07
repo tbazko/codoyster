@@ -1,0 +1,15 @@
+.card-content {
+  border-top: 0;
+  position: relative;
+  z-index: 11;
+
+  @include breakpoint(xsmall) {
+    display: table;
+    position: relative;
+    top: 43%;
+    width: calc(100% + 1px); // +1px due to Chrome issue with table rendering
+    height: calc(57% - 40px);
+    overflow: visible;
+    z-index: index($z-stack, content-overlay);
+  }
+}

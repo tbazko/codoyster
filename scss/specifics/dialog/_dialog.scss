@@ -1,0 +1,54 @@
+.dialog {
+  display: none;
+  position: relative;
+  z-index: index($z-stack, dialog);
+  background-color: $color-white;
+  padding: 45px;
+
+  &.is-active {
+    display: block;
+  }
+
+  @include breakpoint(small) {
+    position: absolute;
+    left: 20%;
+    right: 20%;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+
+  @include breakpoint(medium) {
+    top: 50%;
+    left: 50%;
+    right: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  .dialog-close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 40px;
+    height: 40px;
+    background: $color-main;
+
+    &:before, &:after {
+      content: '';
+      display: block;
+      width: 2px;
+      height: 24px;
+      background: $color-white;
+      position: absolute;
+      top: 8px;
+      left: 19px;
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}
