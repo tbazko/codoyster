@@ -1,4 +1,4 @@
-.parallax-description {
+.background-description {
   color: $color-white;
   position: absolute;
   top: 50%;
@@ -6,4 +6,5 @@
   transform: translate(-50%, -50%);
   z-index: index($z-stack, content-overlay);
   text-align: center;
+  width: 100%;
 }

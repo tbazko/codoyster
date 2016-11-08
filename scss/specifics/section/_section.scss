@@ -2,3 +2,9 @@
   padding-top: 100px;
   padding-bottom: 95px;
 }
+
+.bgcolor {
+  &:nth-of-type(odd) {
+    background-color: $row-bgcolor;
+  }
+}

@@ -1,0 +1,38 @@
+.article p {
+  padding-bottom: 13px;
+  font-size: 16px;
+
+  a:not(.button) {
+    color: $color-main;
+  }
+
+  @include breakpoint(xsmall) {
+    padding-left: 40px;
+  }
+}
+
+.article-image-circle {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 40px;
+
+  @include breakpoint(xsmall) {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+  }
+}
+
+.article-image-circle + p {
+  @include breakpoint(xsmall) {
+    padding-top: 20px;
+  }
+}

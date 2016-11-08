@@ -11,8 +11,6 @@
   }
 
   input[type="submit"] {
-    border-radius: 0;
-    font-size: 14px;
     appearance: none;
   }
 
@@ -21,9 +19,9 @@
   input[type="tel"],
   textarea {
     padding: 10px 15px;
+    border-radius: 4px;
     width: 100%;
     border: 1px solid $color-grey-chateau;
-    border-radius: 0;
     box-shadow: none;
     color: $color-night-rider;
     font-size: 14px;

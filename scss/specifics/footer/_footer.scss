@@ -2,31 +2,3 @@
   background: $color-alternate;
   color: $color-grey-chateau;
 }
-
-.footer .menu {
-  position: relative;
-  text-align: center;
-
-  @include breakpoint(small) {
-    text-align: left;
-  }
-
-  li {
-    display: block;
-    border: 0;
-
-    a {
-      font-weight: 300;
-      color: $color-grey-chateau;
-      padding: 0;
-    }
-
-    &.current-menu-item {
-      border: 0;
-
-      a {
-        color: $color-grey-chateau;
-      }
-    }
-  }
-}

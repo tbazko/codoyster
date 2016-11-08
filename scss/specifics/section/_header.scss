@@ -3,9 +3,17 @@
 
   @include breakpoint(xsmall) {
     margin-bottom: 120px;
-
-    .parallax & {
-      margin-bottom: 40px;
-    }
   };
+
+  &-small-margin {
+    margin-bottom: 40px;
+  }
+
+  &-darkbg {
+    background: rgba(0,0,0,.5);
+    padding: 30px;
+    width: auto;
+    display: inline-block;
+    margin: 0 auto 30px;
+  }
 }

@@ -14,12 +14,17 @@ a.button:active {
 
 a.button-action,
 .button-action {
+  color: $color-white;
+  border: 0;
+  box-shadow: none;
   font-size: 16px;
+  line-height: 24px;
   font-weight: 400;
   background: $color-main;
   padding: 10px 15px;
   margin-bottom: 30px;
   transition: background .2s ease;
+  min-width: 130px;
 
   &:hover,
   &:active {
@@ -59,7 +64,7 @@ a.button-action,
     }
   }
 
-  .parallax & {
+  .background & {
     width: 160px;
     padding: 10px 5px;
   }

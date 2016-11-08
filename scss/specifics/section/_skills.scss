@@ -1,0 +1,31 @@
+.section-skills {
+  background-image: url("/images/skills-blur.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: $color-white;
+  position: relative;
+
+  @include grey-overlay(rgba($color-alternate, .7));
+
+  .section-header,
+  .row {
+    position: relative;
+    z-index: index($z-stack, content-overlay);
+  }
+
+  .skill-box {
+    @include dotted-box($color-laser-lemon, 100px);
+    color: $color-laser-lemon;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    margin-bottom: 50px;
+
+    span {
+      display: table-cell;
+      vertical-align: middle;
+    }
+  }
+}
