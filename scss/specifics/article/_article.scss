@@ -1,13 +1,29 @@
-.article p {
-  padding-bottom: 13px;
-  font-size: 16px;
+.article {
+  p,
+  h2,
+  h3 {
+    padding-bottom: 13px;
 
-  a:not(.button) {
-    color: $color-main;
+    a:not(.button) {
+      color: $color-main;
+    }
+
+    @include breakpoint(xsmall) {
+      padding-left: 40px;
+    }
   }
 
-  @include breakpoint(xsmall) {
-    padding-left: 40px;
+  p {
+    font-size: 16px;
+  }
+
+  h2,
+  h3 {
+    font-weight: 700;
+  }
+
+  p + h3 {
+    margin-top: 20px;
   }
 }
 
@@ -17,17 +33,18 @@
   width: 150px;
   height: 150px;
   margin: 0 auto 40px;
+  position: relative;
+
+  img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+  }
 
   @include breakpoint(xsmall) {
     width: 100%;
     padding-top: 100%;
-    position: relative;
-
-    img {
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
   }
 }
 

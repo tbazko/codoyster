@@ -3,20 +3,25 @@
   position: relative;
   max-width: 460px;
   text-align: left;
-  padding-bottom: 30px;
+  padding-bottom: 50px;
   width: 100%;
+  vertical-align: top;
 
-  @include breakpoint(xsmall) {
-    width: calc(100% - 30px);
+  @include breakpoint(small) {
+    width: calc(50% - 30px);
+    margin: 0 15px;
+    padding-bottom: 30px;
   }
 
   @include breakpoint(medium) {
-    width: calc(100% - 40px);
+    width: calc(100% / 3 - 40px);
     padding-bottom: 60px;
+    margin: 0 20px;
   }
 
   @include breakpoint(large) {
-    width: calc(100% - 50px);
+    width: calc(100% / 3 - 50px);
+    margin: 0 25px;
   }
 
   .row {

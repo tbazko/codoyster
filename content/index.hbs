@@ -2,12 +2,11 @@
 title: Web development by Codoyster
 navTitle: Home
 primary: 1
-url: /
 ---
-<section class="parallax">
-  <div class="image"></div>
-  <div class="parallax-description">
-    <div class="section-header">
+<section class="background background-parallax">
+  <div class="image js-parallax"></div>
+  <div class="background-overlay">
+    <div class="section-header section-header-darkbg section-header-small-margin">
       <h1 class="section-subtitle section-subtitle-canary section-subtitle">Great websites are created here</h1>
       <p class="section-title section-title-noline">You are interested in:</p>
     </div>
@@ -17,21 +16,95 @@ url: /
   </div>
 </section>
 {{#each index.service}}
+
   <section class="bgcolor section">
     <div class="row row-with-padding">
       <header class="col col-12 section-header">
         {{#if this.subtitle}}<h3 class="section-subtitle section-subtitle-centered">{{this.subtitle}}</h3>{{/if}}
         <h2 class="section-title section-title-centered">{{this.title}}</h2>
       </header>
-
+    </div>
+    <div class="row row-with-padding text-center row-with-cards">
       {{#each this.post}}
-        <div class="col col-12 col-sm-4 text-center">
-          <div class="card {{../modifier}}">
-            {{> post-excerpt this}}
-          </div>
-        </div>
+        <article class="card {{../modifier}}">
+          {{> post-excerpt this}}
+        </article>
       {{/each}}
-
     </div>
   </section>
+  {{#is @index 0}}
+    <section class="bgcolor section text-center section-skills">
+      <header class="col col-12 section-header">
+        {{#if this.subtitle}}<h3 class="section-subtitle section-subtitle-canary section-subtitle-centered">Some of my abilities</h3>{{/if}}
+        <h2 class="section-title section-title-centered">Skills stack</h2>
+      </header>
+      <div class="row row-with-padding">
+        <div class="col col-6 col-sm-3">
+          <div class="skill-box">
+            <span>HTML5</span>
+          </div>
+        </div>
+        <div class="col col-6 col-sm-3">
+          <div class="skill-box">
+            <span>CSS3</span>
+          </div>
+        </div>
+        <div class="col col-6 col-sm-3">
+          <div class="skill-box">
+            <span>JS</span>
+          </div>
+        </div>
+        <div class="col col-6 col-sm-3">
+          <div class="skill-box">
+            <span>jQuery</span>
+          </div>
+        </div>
+      </div>
+      <div class="row row-with-padding">
+        <div class="col col-6 col-sm-3">
+          <div class="skill-box">
+            <span>ES6</span>
+          </div>
+        </div>
+        <div class="col col-6 col-sm-3">
+          <div class="skill-box">
+            <span>Node.js</span>
+          </div>
+        </div>
+        <div class="col col-6 col-sm-3">
+          <div class="skill-box">
+            <span>Express.js</span>
+          </div>
+        </div>
+        <div class="col col-6 col-sm-3">
+          <div class="skill-box">
+            <span>MySQL</span>
+          </div>
+        </div>
+      </div>
+      <div class="row row-with-padding">
+        <div class="col col-6 col-sm-3">
+          <div class="skill-box">
+            <span>WordPress</span>
+          </div>
+        </div>
+        <div class="col col-6 col-sm-3">
+          <div class="skill-box">
+            <span>Git</span>
+          </div>
+        </div>
+        <div class="col col-6 col-sm-3">
+          <div class="skill-box">
+            <span>Google Maps API</span>
+          </div>
+        </div>
+        <div class="col col-6 col-sm-3">
+          <div class="skill-box">
+            <span>BEM</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  {{/is}}
 {{/each}}
+{{> contact-me }}

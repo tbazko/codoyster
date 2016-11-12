@@ -1,10 +1,10 @@
 @font-face {
   font-family: "icomoon";
-  src: url("fonts/icomoon.eot?ut1qzx");
-  src: url("fonts/icomoon.eot?ut1qzx#iefix") format("embedded-opentype"),
-  url("fonts/icomoon.ttf?ut1qzx") format("truetype"),
-  url("fonts/icomoon.woff?ut1qzx") format("woff"),
-  url("fonts/icomoon.svg?ut1qzx#icomoon") format("svg");
+  src: url("fonts/icomoon.eot?b05bad");
+  src: url("fonts/icomoon.eot?b05bad#iefix") format("embedded-opentype"),
+  url("fonts/icomoon.ttf?b05bad") format("truetype"),
+  url("fonts/icomoon.woff?b05bad") format("woff"),
+  url("fonts/icomoon.svg?b05bad#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
 }
@@ -25,8 +25,11 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-laptop2:before {
-  content: "\e900";
+.icon-viber:before {
+  content: "\e902";
+}
+.icon-envelope:before {
+  content: "\e901";
 }
 .icon-image:before {
   content: "\e90d";
@@ -81,4 +84,22 @@
 }
 .icon-tree:before {
   content: "\e9bc";
+}
+.icon-facebook:before {
+  content: "\ea91";
+}
+.icon-vk:before {
+  content: "\ea98";
+}
+.icon-github:before {
+  content: "\eab0";
+}
+.icon-skype:before {
+  content: "\eac5";
+}
+.icon-linkedin:before {
+  content: "\eac9";
+}
+.icon-laptop2:before {
+  content: "\e900";
 }

@@ -4,21 +4,38 @@
       <h2 class="section-subtitle section-subtitle-centered">{{subtitle}}</h2>
       <h1 class="section-title section-title-centered">{{title}}</h1>
     </header>
-    <div class="col col-12 col-sm-6">
-      <h2 class="service-post-title">You provide:</h2>
-      <ul class="service-post-list">
-        {{#each provide}}
-          <li>{{>service-post-listItem this}}</li>
-        {{/each}}
-      </ul>
+  </div>
+  <div class="row row-with-padding service-post">
+    <div class="col col-12 col-sm-3">
+      <div class="article-image-circle">
+        <img src="{{image}}" alt="" class="height100" />
+      </div>
     </div>
-    <div class="col col-12 col-sm-6">
-      <h2 class="service-post-title">We deliver:</h2>
-      <ul class="service-post-list">
-        {{#each deliver}}
-          <li>{{>service-post-listItem this}}</li>
-        {{/each}}
-      </ul>
+    <article class="col col-12 col-sm-9 article">
+      {{{full-text}}}
+    </article>
+  </div>
+
+  <div class="row row-with-padding">
+    <input type="checkbox" name="dropdown" id="{{id}}-trigger" class="dropdown-checkbox">
+    <label for="{{id}}-trigger" class="dropdown-trigger dropdown-trigger-post col-sm-9">See the process</label>
+    <div class="dropdown">
+      <div class="col col-12 col-sm-6">
+        <h2 class="service-post-title">You provide:</h2>
+        <ul class="service-post-list">
+          {{#each provide}}
+            <li>{{>service-post-listItem this}}</li>
+          {{/each}}
+        </ul>
+      </div>
+      <div class="col col-12 col-sm-6">
+        <h2 class="service-post-title">I deliver:</h2>
+        <ul class="service-post-list">
+          {{#each deliver}}
+            <li>{{>service-post-listItem this}}</li>
+          {{/each}}
+        </ul>
+      </div>
     </div>
   </div>
 </section>

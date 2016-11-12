@@ -1,4 +1,6 @@
-*, *:after, *:before {
+*,
+*:after,
+*:before {
   box-sizing: border-box;
 }
 
@@ -32,12 +34,6 @@
         flex-flow: row wrap;
       }
     }
-
-    &.space-between-#{i} {
-      @include breakpoint(#{$i}) {
-        justify-content: space-between;
-      }
-    }
   }
 }
 
@@ -64,8 +60,8 @@
     justify-content: space-between;
   }
 
-  &.flex-start {
-    justify-content: flex-start;
+  &.flex-end {
+    justify-content: flex-end;
   }
 
   &.flex-alignment {

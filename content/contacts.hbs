@@ -2,5 +2,34 @@
 title: Contact Codoyster
 navTitle: Contacts
 primary: 5
-url: /contacts
+script: contacts.min
 ---
+<section class="background background-contacts">
+  <div class="image"></div>
+  <div class="background-overlay">
+    <div class="section-header section-header-darkbg section-header section-header-small-margin">
+      <h1 class="section-subtitle section-subtitle-centered section-subtitle-canary">I will gladly hear from you</h1>
+      <p class="section-title section-title-white section-title-noline section-title-centered">Contact me</p>
+    </div>
+    <div class="contact-form-wrapper">
+      <form class="contact-form js-contact-form">
+        <span class="error">Please, fill in all fields correctly.</span>
+        <input type="text" name="_gotcha" />
+        <p>
+          <input type="text" name="name" placeholder="Your name">
+        </p>
+        <p>
+          <input type="email" name="email" placeholder="Your email" class="is-required">
+          <span class="error">Please, fill in your email correctly.</span>
+        </p>
+        <p>
+          <textarea name="message" rows="6" placeholder="Your message" class="is-required"></textarea>
+          <span class="error">Please, write a message.</span>
+        </p>
+        <p>
+          <button type="submit" class="button button-action button-action-laser-lemon">Send</button>
+        </p>
+      </form>
+    </div>
+  </div>
+</section>

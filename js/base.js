@@ -1,26 +1,35 @@
-(function iifeBase($) {
-  $(document).ready(function() {
-    var menu = new Menu('.menu-wrapper', '.menu-trigger');
-    menu.init();
-  });
-  
-  function Menu(menuClass, triggerClass, options) {
-    this.$menu = $(menuClass);
-    this.$trigger = $(triggerClass);
-    this.$container = $('.js-main-container');
-  }
+(function iifeBase() {
+	document.addEventListener('DOMContentLoaded', initialize.bind(this));
 
-  Menu.prototype.init = function() {
-    this.bindEvents();
-  }
+	function initialize() {
+		var isFirefox = navigator.userAgent.toLowerCase()
+			.indexOf('firefox') > -1;
+		var menu = new Menu('js-menu-wrapper', 'js-menu-trigger');
+		var parallax = document.getElementsByClassName('js-parallax');
+		if (navigator.userAgent.toLowerCase()
+			.indexOf('firefox') > -1 && parallax.length) {
+			parallax[0].style.animation = 'none';
+		}
+		(function () {
+			var throttle = function (type, name, obj) {
+				obj = obj || window;
+				var running = false;
+				var func = function () {
+					if (running) {
+						return;
+					}
+					running = true;
+					requestAnimationFrame(function () {
+						obj.dispatchEvent(new CustomEvent(name));
+						running = false;
+					});
+				};
+				obj.addEventListener(type, func);
+			};
 
-  Menu.prototype.bindEvents = function() {
-    this.$trigger.on('click', this.toggleMenu.bind(this));
-  }
+			throttle("resize", "optimizedResize");
+		})();
 
-  Menu.prototype.toggleMenu = function() {
-    this.$menu.toggleClass('is-active');
-    this.$trigger.toggleClass('is-active');
-    this.$container.toggleClass('is-active-menu');
-  }
-})(jQuery);
+		menu.init();
+	}
+})();

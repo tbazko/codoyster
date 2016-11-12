@@ -1,21 +1,21 @@
-<nav class="row row-with-padding row-navigation">
-  <div class="col col-6 col-md-2">
-    <h1 class="header-logo">
+<nav id="navigation" class="row row-with-padding navigation">
+  <div class="col col-6 col-md-2 flex valign-center flex-all">
+    <h1 class="navigation-logo">
       Codoyster
       <a href="/">
         <img src="/images/logo.png" alt="" />
       </a>
     </h1>
   </div>
-  <div class="col col-6 col-md-10">
-    <div class="menu-trigger">
+  <div class="col col-6 col-md-10 flex valign-center flex-end flex-all">
+    <div class="menu-trigger js-menu-trigger">
       <div class="menu-trigger-icon">
         <span class="menu-trigger-icon--top"></span>
         <span class="menu-trigger-icon--middle"></span>
         <span class="menu-trigger-icon--bottom"></span>
       </div>
     </div>
-    <div class="menu-wrapper">
+    <div class="menu-wrapper js-menu-wrapper">
       <ul class="menu">
         {{#withSort pages "data.primary" }}
           {{#if data.primary}}

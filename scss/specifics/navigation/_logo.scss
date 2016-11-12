@@ -1,0 +1,56 @@
+.navigation-logo {
+  margin-left: -10px;
+  height: 54px;
+  padding: 5px 0 3px;
+  font-size: 0;
+
+  @include breakpoint(xsmall) {
+    margin-left: -30px;
+  }
+
+  @include breakpoint(small) {
+    margin-left: 0;
+    height: 100%;
+    max-height: 72px;
+    padding: 5px 0 3px;
+
+    .is-sticky & {
+      max-height: $navHeightSticky;
+      transition: max-height .2s ease;
+    }
+  }
+
+  @include breakpoint(medium) {
+    height: 100%;
+    max-height: 76px;
+    padding: 5px 0 3px;
+    transition: max-height .2s ease;
+  }
+
+  @include breakpoint(large) {
+    padding-left: 25px;
+  }
+}
+
+.navigation-logo {
+  color: #fff;
+  display: block;
+  font-weight: normal;
+  text-decoration: none;
+
+  img {
+    width: auto;
+    height: 100%;
+  }
+}
+
+.navigation-logo a {
+  border: 0;
+  display: block;
+  height: 100%;
+
+  &:hover,
+  &:active {
+    border: 0;
+  }
+}

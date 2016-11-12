@@ -25,7 +25,7 @@
   height: calc(100vh - 64px);
   overflow: hidden;
   position: relative;
-  min-height: 455px;
+  min-height: 500px;
   @include grey-overlay;
 
   @include breakpoint(small) {
@@ -46,8 +46,14 @@
 }
 
 .background-contacts {
+  min-height: 600px;
+
   .image {
     background-image: url("../images/bottle.jpg");
+  }
+
+  @include breakpoint(small) {
+    min-height: 660px;
   }
 }
 
@@ -55,11 +61,9 @@
   .image {
     width: 125%;
     height: 125%;
-    background-image: url("../images/workplace/workplace.jpg");
-    transform: translate(-10%, -10%);
-    animation-name: parallax;
-    animation-duration: 80s;
-    animation-timing-function: linear;
-    animation-iteration-count: infinite;
+    background-image: url("../images/workplace.jpg");
+    transform: translate(-10%, -10%) translateZ(1px);
+    animation: parallax 80s infinite linear;
+    animation-fill-mode: both;
   }
 }

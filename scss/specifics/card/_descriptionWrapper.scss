@@ -6,4 +6,12 @@
   @include breakpoint(xsmall) {
     margin-bottom: 0;
   }
+
+  .card-dark & {
+    color: $color-white;
+  }
+
+  p + p {
+    margin-top: 13px;
+  }
 }

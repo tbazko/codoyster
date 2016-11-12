@@ -2,39 +2,34 @@
 title: Portfolio
 navTitle: Portfolio
 primary: 3
-url: /portfolio
 ---
-<div class="bgcolor section">
-  <section class="row row-with-padding">
-    <div class="col col-12 section-header">
-      <h1 class="section-subtitle section-subtitle-centered">Working and growing with awesome people</h1>
-      <p class="section-title section-title-centered">Projects I participated in:</p>
-    </div>
-  </section>
-  <section class="row row-with-padding">
+<section class="bgcolor section">
+
+  <div class="section-header">
+    <h1 class="section-subtitle section-subtitle-centered">Working and growing with awesome people</h1>
+    <p class="section-title section-title-centered">Projects I participated in:</p>
+  </div>
+  <div class="row row-with-padding text-center row-with-cards">
     {{#each portfolio.project.participated}}
-      <div class="col col-12 col-sm-6 col-md-4">
-        <div class="card card-portfolio">
-          {{>post-excerpt this}}
-        </div>
+      <div class="card card-portfolio">
+        {{>post-excerpt this}}
       </div>
     {{/each}}
-  </section>
-</div>
-<div class="bgcolor section">
-  <section class="row row-with-padding">
+  </div>
+</section>
+<section class="bgcolor section">
+  <div class="row row-with-padding">
     <div class="col col-12 section-header">
       <h1 class="section-subtitle section-subtitle-centered">Freelance works</h1>
       <p class="section-title section-title-centered">Standalone projects:</p>
     </div>
-  </section>
-  <section class="row row-with-padding">
+  </div>
+  <div class="row row-with-padding text-center row-with-cards">
     {{#each portfolio.project.freelance}}
-      <div class="col col-12 col-sm-6 col-md-4">
-        <div class="card card-portfolio">
-          {{>post-excerpt this}}
-        </div>
+      <div class="card card-portfolio">
+        {{>post-excerpt this}}
       </div>
     {{/each}}
-  </section>
-</div>
+  </div>
+</section>
+{{> contact-me }}

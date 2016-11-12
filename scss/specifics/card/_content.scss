@@ -12,4 +12,16 @@
     overflow: visible;
     z-index: index($z-stack, content-overlay);
   }
+
+  .card-dark & {
+    position: absolute;
+    display: block;
+    top: 20px;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    border: 1px solid $color-white;
+    height: calc(100% - 40px);
+    width: calc(100% - 40px);
+  }
 }

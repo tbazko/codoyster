@@ -13,7 +13,13 @@
     <h1 class="card-title">{{{title}}}</h1>
     <div class="card-descriptionWrapper">
       <p>{{{excerpt}}}</p>
+      <p>
+        {{#if workedon}}<strong>Worked on:</strong> {{{workedon}}}{{/if}}
+      </p>
+      <p>
+        {{#if tech}}<strong>Used:</strong> {{{tech}}}{{/if}}
+      </p>
     </div>
   </div>
 </div>
-<a href="{{{url}}}" class="link-read-more">See more</a>
+{{#if url}}<a href="{{{url}}}" class="link-read-more">See more</a>{{/if}}

@@ -1,6 +1,11 @@
 .section {
-  padding-top: 100px;
-  padding-bottom: 95px;
+  padding-top: 50px;
+  padding-bottom: 0;
+
+  @include breakpoint(small) {
+    padding-top: 100px;
+    padding-bottom: 95px;
+  }
 }
 
 .bgcolor {

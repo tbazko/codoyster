@@ -12,6 +12,11 @@
 
   input[type="submit"] {
     appearance: none;
+    cursor: pointer;
+  }
+
+  input[name="_gotcha"] {
+    display: none;
   }
 
   input[type="text"],

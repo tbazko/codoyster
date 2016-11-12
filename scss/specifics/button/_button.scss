@@ -10,6 +10,8 @@ a.button:active {
 .button {
   border-radius: 4px;
   display: inline-block;
+  -webkit-appearance: none;
+  cursor: pointer;
 }
 
 a.button-action,
@@ -47,7 +49,7 @@ a.button-action,
 
     &:hover,
     &:active {
-      background: lighten($color-canary, 10%);
+      background: lighten($color-canary, 15%);
       transition: background .2s ease;
     }
   }

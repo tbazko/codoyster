@@ -1,9 +1,18 @@
 .main-container {
   position: relative;
   width: 100%;
+  padding-top: $navHeightSticky;
+
+  @include breakpoint(small) {
+    padding-top: $navHeightSmall;
+  };
+
+  @include breakpoint(medium) {
+    padding-top: $navHeight;
+  };
 
   &:after {
-    content: '';
+    content: "";
     background: rgba(0,0,0,0);
     position: absolute;
     top: 0;
@@ -17,12 +26,12 @@
 
   &.is-active-menu,
   &.is-active-dialog {
-    position: fixed;
-    height: 100vh;
-    overflow: hidden;
+    // position: fixed;
+    // height: 100vh;
+    // overflow: hidden;
 
     &:after {
-      content: '';
+      content: "";
       background: rgba(0,0,0,.8);
       transition: background .4s ease;
       z-index: index($z-stack, navigation-grey-overlay);

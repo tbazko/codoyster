@@ -15,11 +15,6 @@
   position: relative;
   z-index: index($z-stack, base);
 
-  &.row-navigation {
-    background: $color-white;
-    z-index: index($z-stack, navigation);
-  }
-
   &.row-all-contacts {
     background: $color-black-pearl;
     color: $color-white;
@@ -47,6 +42,10 @@
 
   .row {
     min-width: 0;
+  }
+
+  &.row-with-cards {
+    font-size: 0;
   }
 
   &.row-with-padding {
@@ -94,6 +93,10 @@ $columns: 12;
 }
 
 @include createFractionColumns (".col", $columns);
+
+@include breakpoint(xsmall) {
+  @include createFractionColumns (".col-xs", $columns);
+}
 
 @include breakpoint(small) {
   @include createFractionColumns (".col-sm", $columns);

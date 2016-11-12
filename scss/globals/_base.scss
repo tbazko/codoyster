@@ -64,8 +64,8 @@ h4 {
 }
 
 strong {
-  font-weight: 400;
-  color: $color-night-rider;
+  font-weight: 700;
+  color: inherit;
 }
 
 blockquote {
@@ -78,6 +78,16 @@ blockquote {
   position: relative;
   color: #333;
   border: 1px dotted $color-main;
+}
+
+img {
+  height: auto;
+  width: 100%;
+
+  &.height100 {
+    height: 100%;
+    width: auto;
+  }
 }
 
 .is-hidden {
@@ -104,7 +114,7 @@ a {
   &.link-read-more {
     font-family: $font-cursive;
     font-weight: normal;
-    font-size: 21px;
+    font-size: 22px;
     color: $color-main;
     border-bottom: 1px dotted transparent;
     transition: border .2s ease, color .2s ease;
@@ -117,12 +127,18 @@ a {
   }
 }
 
-.bgcolor {
-  &:nth-of-type(odd) {
-    background: $row-bgcolor;
-  }
-}
-
 .text-center {
   text-align: center;
+}
+
+.left {
+  float: left;
+}
+
+.right {
+  float: right;
+}
+
+.clearfix {
+  @extend %clearfix;
 }

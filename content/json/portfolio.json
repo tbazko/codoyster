@@ -3,54 +3,69 @@
     "freelance": [
       {
         "title": "Auditorium",
-        "image": "/images/portfolio/auditorium.png",
+        "image": "/images/portfolio/auditorium-crop.jpg",
         "excerpt": "Space for tutors and coaches in Kiev.",
-        "url": "/portfolio/auditorium",
-        "siteurl": "http://auditorium.com.ua"
+        "siteurl": "http://auditorium.com.ua",
+        "workedon": "Desinged, created new WordPress theme, custom post types and metaboxes. Filled in content and hosted. Made SEO optimisation.",
+        "tech": "html5, css3, scss, JavaScript, php, WordPress"
       },
       {
         "title": "Developer's portfolio",
-        "image": "/images/portfolio/tbazko.png",
+        "image": "/images/portfolio/tbazko-crop.jpg",
         "excerpt": "Front-end developer's CV and portfolio.",
-        "url": "/portfolio/portfolio",
-        "siteurl": "http://tbazko.github.io/"
+        "siteurl": "http://tbazko.github.io/",
+        "workedon": "Desinged, created and hosted.",
+        "tech": "html5, css3"
       }
     ],
     "participated": [
       {
         "title": "G-Star Raw",
-        "image": "/images/portfolio/g-star.png",
+        "image": "/images/portfolio/g-star-crop.jpg",
         "excerpt": "Official online store.",
-        "url": "/portfolio/g-star",
-        "siteurl": "https://www.g-star.com/nl_nl"
+        "siteurl": "https://www.g-star.com/nl_nl",
+        "workedon": "Made website responsive. Worked on navigation (site and top). Worked on filters, lookbook, footer, product detail pages. BEMified project.",
+        "tech": "html5, css3, JavaScript, scss, mustache, GruntJS, RequireJS, jQuery, AJAX"
+      },
+      {
+        "title": "G-Star Raw Storefinder",
+        "image": "/images/portfolio/storefinder-crop.jpg",
+        "excerpt": "Find G-Star Raw shop in your country.",
+        "siteurl": "https://www.g-star.com/nl_nl/find-a-store",
+        "workedon": "Created Storefinder based on Google Maps API. Created chinese version (Google Maps are banned there) based on Sogou API.",
+        "tech": "html5, css3, JavaScript, scss, mustache, GruntJS, RequireJS, jQuery, AJAX"
       },
       {
         "title": "G-Star Raw Outlet",
-        "image": "/images/portfolio/g-star-outlet.png",
+        "image": "/images/portfolio/g-star-outlet-crop.jpg",
         "excerpt": "Official outlet online store.",
-        "url": "/portfolio/g-star-outlet",
-        "siteurl": "https://outlet.g-star.com/nl_nl/"
+        "siteurl": "https://outlet.g-star.com/nl_nl/",
+        "workedon": "Participated in creating new fully featured G-Star outlet site.",
+        "tech": "html5, css3, JavaScript, scss, mustache, GruntJS, RequireJS, jQuery, AJAX"
       },
       {
         "title": "Y8",
-        "image": "/images/portfolio/y8.png",
+        "image": "/images/portfolio/y8-crop.jpg",
         "excerpt": "Games at Y8.com. Over 50,000 games to choose from online.",
-        "url": "/portfolio/y8",
-        "siteurl": "http://www.y8.com/"
+        "siteurl": "http://www.y8.com/",
+        "workedon": "Layout, UI, UX",
+        "tech": "html5, css3, scss, jquery, javascript, ruby on rails, Adobe Photoshop, Adobe Illustrator"
       },
       {
         "title": "ID.net",
-        "image": "/images/portfolio/idnet.png",
+        "image": "/images/portfolio/idnet-crop.jpg",
         "excerpt": "A single login for hundreds of sites, games, and applications.",
-        "url": "/portfolio/idnet",
-        "siteurl": "https://www.id.net/"
+        "siteurl": "https://www.id.net/",
+        "workedon": "Layout, UI, UX",
+        "tech": "html5, css3, jquery, javascript, ruby on rails, Adobe Photoshop, Adobe Illustrator"
       },
       {
         "title": "Ant Bookmarks",
-        "image": "/images/portfolio/ant.png",
+        "image": "/images/portfolio/ant-crop.jpg",
         "excerpt": "Find results from usual web and your bookmark collection at the same time.",
-        "url": "/portfolio/ant",
-        "siteurl": "https://www.ant.com/"
+        "siteurl": "https://www.ant.com/",
+        "workedon": "Layout, UI, UX",
+        "tech": "html5, css3, jquery, javascript, ruby on rails, Adobe Photoshop, Adobe Illustrator"
       }
     ]
   }

@@ -1,15 +1,16 @@
 {
   "service": [
     {
-      "title": "We are building",
+      "title": "I am building",
       "subtitle": "Welcome to Codoyster",
-      "modifier": "usp-block--modern",
+      "modifier": "",
       "post": [
         {
-          "title": "Static website",
+          "title": "Static websites",
           "excerpt": "Codoyster creates new websites from scratch. \"Static\" means: fixed content, but not \"fixed\" design. You can have all animations you wish on your website.",
+          "full-text": "<h3>Need a website?</h3><p>Do you need to promote your local buisness? Need a website and don't know where to start? Have sime beautiful designs, but no one to implement them? Codoyster can help!</p><p>I build new websites from scratch. Just provide design of how you see your future site and some feature's description and get your own homepage, corporative page, restaurant/shop/agency/whatever website.</p><h3>What is static website?</h3><p>\"Static\" means: fixed content. Since static Web pages contain fixed code, the content of each page does not change unless it is manually updated by the webmaster. Such site can be built by simply creating a few HTML pages and publishing them to a Web server. However, static doesn't mean \"fixed\" design or solid block of text. You can have all animations and transitions you wish on your website. Codoyster.com is a static website for example.</p>",
           "subtitle": "html5, css3, assemble.io, javascript, jquery",
-          "image": "https://placeholdit.imgix.net/~text?txtsize=33&txt=740%C3%97500&w=740&h=500",
+          "image": "/images/static-crop.jpg",
           "url": "/service#static-website",
           "id": "static-website",
           "provide": [
@@ -58,10 +59,11 @@
           ]
         },
         {
-          "title": "Dynamic website or webapp",
+          "title": "Dynamic websites or webapp",
           "excerpt": "Based on Node.js and MySQL. Nice option for large websites or web services.",
+          "full-text": "<h3>Want to make something advanced?</h3><p>Need a fancy website? Or a feature for one? I'll gladly help. If you need dynamic data on your website, complicated user interactions and storing information in database this type of site is a good choice.</p><h3>How is it different from static site?</h3><p>Dynamic pages access information from a database. Therefore, to alter the content of a dynamic page, the webmaster may only need to update a database record. This is especially helpful for large sites that contain hundreds or thousands of pages.</p>",
           "subtitle": "html5, css3, node.js, es6 and mySQL",
-          "image": "https://placeholdit.imgix.net/~text?txtsize=33&txt=740%C3%97500&w=740&h=500",
+          "image": "/images/nodejs-crop.jpg",
           "url": "/service#dynamic-website",
           "id": "dynamic-website",
           "provide": [
@@ -115,10 +117,11 @@
           ]
         },
         {
-          "title": "WordPress website",
+          "title": "WordPress websites",
           "excerpt": "Building from scratch or with required theme. Perfect for bloggers or those, who wants to update their site content regularly, whithout editing source code.",
+          "full-text": "<h3>Want to have full control over your data?</h3><p>WordPress started as a blogging platform, but grew in a CMS which alows to create all kinds of websites. It's one of the most commonly used CMS on the web, which means there is a bullet-proof documentation, lots of tutorials for both developers and content-managers and also good support within community.</p><h3>What do I need CMS for?</h3><p>CMS allows you to manage your data on site, change parts of pages and create new pages without webmaster help. It has graphical user interface which allows you to do that without any coding.</p>",
           "subtitle": "wordpress, theme, php, css3, javascript, jquery, html5",
-          "image": "https://placeholdit.imgix.net/~text?txtsize=33&txt=740%C3%97500&w=740&h=500",
+          "image": "/images/wordpress-crop.jpg",
           "url": "/service#wordpress-website",
           "id": "wordpress-website",
           "provide": [
@@ -169,24 +172,24 @@
       ]
     },
     {
-      "title": "We are providing",
+      "title": "I am also providing",
       "subtitle": "Do you need some Front-end help?",
-      "modifier": "usp-block--classic",
+      "modifier": "card-dark",
       "post": [
         {
+          "title": "New features",
+          "excerpt": "New functionality for your existing website.",
+          "image": "/images/providing/grow.jpg"
+        },
+        {
           "title": "Fix for a problem",
-          "subtitle": "On your site related to front-end code",
-          "image": "https://placeholdit.imgix.net/~text?txtsize=33&txt=740%C3%97500&w=740&h=500"
+          "excerpt": "Bugfix for your site if proble is front-end related.",
+          "image": "/images/providing/rubik.jpg"
         },
         {
           "title": "Site speed optimisation",
-          "subtitle": "Decrease your site load and interaction speed &mdash; increase conversion",
-          "image": "https://placeholdit.imgix.net/~text?txtsize=33&txt=740%C3%97500&w=740&h=500"
-        },
-        {
-          "title": "General Front-end advice",
-          "subtitle": "Confused with all the front end tools? Don't know where to put script or better organize your files? Codoyster can help.",
-          "image": "https://placeholdit.imgix.net/~text?txtsize=33&txt=740%C3%97500&w=740&h=500"
+          "excerpt": "Decrease your site load and interaction speed &mdash; increase conversion",
+          "image": "/images/providing/horses.jpg"
         }
       ]
     }
