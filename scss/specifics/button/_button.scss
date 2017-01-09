@@ -28,6 +28,11 @@ a.button-action,
   transition: background .2s ease;
   min-width: 130px;
 
+  h2 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
   &:hover,
   &:active {
     background: darken($color-main, 10%);
@@ -69,5 +74,7 @@ a.button-action,
   .background & {
     width: 160px;
     padding: 10px 5px;
+    display: block;
+    margin: 0 auto 30px;
   }
 }
