@@ -68,7 +68,7 @@ module.exports = function (grunt) {
 		}
 	});
 
-	grunt.loadNpmTasks('assemble');
+	grunt.loadNpmTasks('grunt-assemble');
 	grunt.loadNpmTasks('grunt-contrib-watch');
 	grunt.loadNpmTasks('grunt-autoprefixer');
 	grunt.loadNpmTasks('grunt-contrib-sass');
