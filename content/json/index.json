@@ -117,55 +117,50 @@
           ]
         },
         {
-          "title": "WordPress websites",
-          "excerpt": "Building from scratch or with required theme. Perfect for bloggers or those, who wants to update their site content regularly, whithout editing source code.",
-          "full-text": "<h3>Want to have full control over your data?</h3><p>WordPress started as a blogging platform, but grew in a CMS which alows to create all kinds of websites. It's one of the most commonly used CMS on the web, which means there is a bullet-proof documentation, lots of tutorials for both developers and content-managers and also good support within community.</p><h3>What do I need CMS for?</h3><p>CMS allows you to manage your data on site, change parts of pages and create new pages without webmaster help. It has graphical user interface which allows you to do that without any coding.</p>",
-          "subtitle": "wordpress, theme, php, css3, javascript, jquery, html5",
-          "image": "/images/wordpress-crop.jpg",
-          "url": "/service#wordpress-website",
-          "id": "wordpress-website",
+          "title": "Application Programming Interface (API)",
+          "excerpt": "Building from scratch or improving the one you've got. Make your app do more!",
+          "full-text": "<h3>Need cool functionality for some of your apps?</h3><p>API makes development of your apps simpler. Not only can it be shared across many of them, but also in can incapsulate communication with all other third-party services you need to work with. No need to maintain communication with Firebase, Salesforce, Dialogflow or whatever from each of your apps. Just create API and only expose functionality you need with buisness related naming so it's crisp and clear for you and your developers.</p>",
+          "subtitle": "node.js, express.js, SQL, noSQL, AWS, Heroku, Firebase",
+          "image": "/images/api-crop.jpg",
+          "url": "/service#api",
+          "id": "api",
           "provide": [
             {
-              "title": "Website design",
-              "text": "Design for mobile, tablet and desktop sizes (or specific breakpoints) OR desired theme.",
-              "iconName": "file-picture"
+              "title": "Application flow",
+              "text": "How should application work in different cases? The best option to provide explanation in UML or UML like schema.",
+              "iconName": "tree"
             },
             {
-              "title": "Content for website",
-              "text": "Content, to fill the site. Content can be not final or even fake, as you can manage the site through Wordpress yourself later.",
-              "iconName": "file-picture"
+              "title": "Buisness requirements",
+              "text": "Specification with requirements.",
+              "iconName": "coin-dollar"
             },
             {
-              "title": "Features descriptions",
-              "text": "User and content-manager workflow, animation steps.",
-              "iconName": "cogs"
-            },
-            {
-              "title": "Additional info",
-              "text": "There is always something more to say and define. Feel free.",
-              "iconName": "list2"
+              "title": "Technical requirements",
+              "text": "Preferences of technologies stack (if any).",
+              "iconName": "wrench"
             }
           ],
           "deliver": [
             {
               "title": "Source code",
-              "text": "Website source code according to design and specs",
+              "text": "Access to git repository or zip with code, whatever you prefer",
               "iconName": "embed2"
             },
             {
-              "title": "Launch of website",
-              "text": "If required: launch website on hosting (put it online)",
+              "title": "Working API in Cloud",
+              "text": "API on Heroku, AWS, Firebase. Do you have preference? Ask me I'll explain about each.",
               "iconName": "rocket"
             },
             {
-              "title": "Seo optimised pages",
-              "text": "Seo optimised website pages",
-              "iconName": "search"
+              "title": "CI / CD",
+              "text": "Plan on improving or changing API sometime? I can setup Continuous Integration and Continuous Deployment for you, to simplify future process for you.",
+              "iconName": "cogs"
             },
             {
-              "title": "Crossbrowser support",
-              "text": "FF, Chrome, Safari, IE10+, Android and iOS support. IE9 or lower support for additional fee",
-              "iconName": "stack"
+              "title": "Test coverage",
+              "text": "We both will sleep better knowing API works well and this can be proven. Unit and integration tests help raise the quality of product.",
+              "iconName": "meter"
             }
           ]
         }

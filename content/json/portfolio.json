@@ -6,7 +6,7 @@
         "image": "/images/portfolio/auditorium-crop.jpg",
         "excerpt": "Space for tutors and coaches in Kiev.",
         "siteurl": "http://auditorium.com.ua",
-        "workedon": "Desinged, created new WordPress theme, custom post types and metaboxes. Filled in content and hosted. Made SEO optimisation.",
+        "workedon": "Designed, created new WordPress theme, custom post types and metaboxes. Filled in content and hosted. Made SEO optimisation.",
         "tech": "html5, css3, scss, JavaScript, php, WordPress"
       },
       {
@@ -19,6 +19,22 @@
       }
     ],
     "participated": [
+      {
+        "title": "DAZN 2.0",
+        "image": "/images/portfolio/dazn-crop.jpg",
+        "excerpt": "Watch sports live and on demand anytime, anywhere",
+        "siteurl": "https://watch.dazn.com/en-DE/sports/",
+        "workedon": "Was working on projects within DAZN: Contact Us, Help, LiveChat, Chatbot. This was part of massive rearchitect of platform and is not yet online.",
+        "tech": "React, Node.js, ES7, AWS S3, AWS Lambda, AWS EC2, Terraform, Dialogflow, Salesforce, Ava, Jest, Cucumber..."
+      },
+      {
+        "title": "#MYTOMMY",
+        "image": "/images/portfolio/tommy-crop.jpg",
+        "excerpt": "Tommy Hilfiger Loyalty App",
+        "siteurl": "https://apps.apple.com/nl/app/mytommy/id1272118764?l=en",
+        "workedon": "Built project from ground up together with team. Create and supported API, integrated headless CMS and other 3-d party services. Worked on mobile app itself. Setup CI.",
+        "tech": "React Native, React, Node.js, ES6, Express.js, PostgreSQL, Knex.js, Heroku, Kue.js, Contentful (Headless CMS)"
+      },
       {
         "title": "G-Star Raw",
         "image": "/images/portfolio/g-star-crop.jpg",
