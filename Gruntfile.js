@@ -3,7 +3,6 @@ module.exports = function (grunt) {
 		pkg: grunt.file.readJSON('package.json'),
 		sass: {
 			options: {
-				sourcemap: 'none',
 				style: 'compressed'
 			},
 			dist: {
@@ -74,4 +73,5 @@ module.exports = function (grunt) {
 	grunt.loadNpmTasks('grunt-contrib-sass');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
 	grunt.registerTask('default', ['watch', 'assemble']);
+	grunt.registerTask('build', ['sass', 'assemble', 'autoprefixer', 'uglify']);
 }

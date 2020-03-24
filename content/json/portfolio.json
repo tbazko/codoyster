@@ -20,6 +20,14 @@
     ],
     "participated": [
       {
+        "title": "HomeApp",
+        "image": "/images/portfolio/HomeApp-crop.jpg",
+        "excerpt": "App to manage technicians appointments at client's",
+        "siteurl": "https://apps.apple.com/nl/app/home-app/id1435486205?l=en",
+        "workedon": "Everything",
+        "tech": "React Native, Node.js, AWS Lambda"
+      },
+      {
         "title": "DAZN 2.0",
         "image": "/images/portfolio/dazn-crop.jpg",
         "excerpt": "Watch sports live and on demand anytime, anywhere",
